@@ -32,51 +32,54 @@ int main()
         case 2:
             printf("Enter height and type: ");
             scanf("%d%d",&height,&type);
-            if(type==1){
-                for(int i=1;i<=height;i++){
-                    for(int j=1;j<=i;j++){
-                        if(i==1||i==height||j==i||j==1)
-                        printf("*");
-                    else
-                        printf(" ");
+            switch(type){
+                case 1:
+                    for(int i=1;i<=height;i++){
+                        for(int j=1;j<=i;j++){
+                            if(i==1||i==height||j==i||j==1)
+                            printf("*");
+                        else
+                            printf(" ");
+                        }
+                        printf("\n");
                     }
-                    printf("\n");
-                }
-            }
-
-            if(type==2){
-                for(int i=height;i>=1;i--){
-                    for(int j=1;j<=i;j++){
-                        if(i==1||i==height||j==i||j==1)
-                        printf("*");
-                    else
-                        printf(" ");
+                    break;
+                case 2:
+                    for(int i=height;i>=1;i--){
+                        for(int j=1;j<=i;j++){
+                            if(i==1||i==height||j==i||j==1)
+                            printf("*");
+                        else
+                            printf(" ");
+                        }
+                        printf("\n");
                     }
-                    printf("\n");
-                }
-            }
-
-            if(type==3){
-                for(int i=height,x=height;i>=1;i--){
-                    for(int j=height;j>=1;j--){
-                        if(j==i||i==height||x<=i&&x<=j)
-                        printf("*");
-                    else
-                        printf("0");
+                    break;
+                case 3:
+                    for(int i=height;i>=1;i--){
+                        for(int j=1;j<=height;j++){
+                            if(j==i||i==1||j==height)
+                            printf("*");
+                        else
+                            printf(" ");
+                        }
+                        printf("\n");
                     }
-                    printf("\n");
-                }
+                    break;
+                case 4:
+                    for(int i=1;i<=height;i++){
+                        for(int j=1;j<=height;j++){
+                            if(j==i||i==1||j==height)
+                            printf("*");
+                        else
+                            printf(" ");
+                        }
+                        printf("\n");
+                    }
+                    break;
             }
-
-
-
-
             break;
         }
-
     }
-
-
     return 0;
 }
-
