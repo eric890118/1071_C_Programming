@@ -15,3 +15,14 @@ Week 3
 * BMI using while.cpp
 * sum(n1,n2).cpp
 
+Week 4
+* Menu.cpp
+* Menu2.cpp
+* sum2.cpp
+
+Week 5
+* Menu-leap-time.cpp
+* Test.cpp
+
+Week 6
+* days passed since Jan 1 of specific year.cpp
