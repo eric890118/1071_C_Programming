@@ -27,3 +27,10 @@ Week 5
 Week 6
 * days passed since Jan 1 of specific year.cpp
 * sorting an array.cpp
+
+Week 7
+* Hanoi tower -- six functions.cpp
+* fib(n).cpp
+* re gcd & gcd.cpp
+* re sum.cpp
+* re sumodd.cpp
