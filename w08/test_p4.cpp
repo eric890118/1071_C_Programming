@@ -28,3 +28,5 @@ int main(){
     printf("FailedCount = %d\n",fail);
     printf("Average= %.1f\n",aver);
 }
+
+/* Not End */
