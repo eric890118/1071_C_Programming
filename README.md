@@ -34,3 +34,17 @@ Week 7
 * re gcd & gcd.cpp
 * re sum.cpp
 * re sumodd.cpp
+
+Week 8
+* magic.cpp
+* test_p1.cpp
+* test_p2.cpp
+* test_p3.cpp
+* test_p4.cpp
+
+Week 9
+* Lotto.cpp
+* rand-date.cpp
+* test2-1.cpp
+* test2-2.cpp
+* test2-4.cpp
