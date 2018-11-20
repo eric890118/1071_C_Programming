@@ -48,3 +48,9 @@ Week 9
 * test2-1.cpp
 * test2-2.cpp
 * test2-4.cpp
+
+Week 10
+Exam week
+
+Week 11
+* knught tour.cpp
