@@ -86,9 +86,9 @@ int main()
         int m[8][8]= {0};
 
         Pos pos;
-        srand(time(NULL));
-        int row = rand()%8;
-        int col = rand()%8;
+        //srand(time(NULL));
+        int row /*= rand()%8*/;
+        int col /*= rand()%8*/;
 
         if(choice==1)
         {
@@ -111,9 +111,27 @@ int main()
 
         if(choice==2)
         {
-            for(int i=0;i<=7;i++){
-                for(int j=0;j<=7;j++){
-                    printf("64 ");
+            row=0;
+            col=0;
+            m[row][col] = 1;
+            for(pos.col=0; pos.col<=7;pos.col++)
+            {
+            int moves2;
+                for(pos.row=0; pos.row<=7;pos.row++)
+                {
+                moves2=1;
+                    for(int i=2; i<=64; i++)
+                    {
+                        pos = findNextBestPos(m,access,row,col);
+                        moves2++;
+                        m[pos.row][pos.col] = i;
+                        row = pos.row;
+                        col = pos.col;
+                    }
+                prArr(m);
+                //printf("%2d ",moves2);
+                printf("\n");
+                
                 }
                 printf("\n");
             }
