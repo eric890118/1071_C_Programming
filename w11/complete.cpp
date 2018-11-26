@@ -86,9 +86,9 @@ int main()
         int m[8][8]= {0};
 
         Pos pos;
-        //srand(time(NULL));
-        int row /*= rand()%8*/;
-        int col /*= rand()%8*/;
+        srand(time(NULL));
+        int row = rand()%8;
+        int col = rand()%8;
 
         if(choice==1)
         {
@@ -97,6 +97,7 @@ int main()
             m[row][col] = 1;
             for(int i=2; i<=64; i++)
             {
+                if(pos.col==-1 || pos.row==-1) break;
                 pos = findNextBestPos(m,access,row,col);
                 moves++;
                 m[pos.row][pos.col] = i;
@@ -111,27 +112,30 @@ int main()
 
         if(choice==2)
         {
-            row=0;
-            col=0;
-            m[row][col] = 1;
-            for(pos.col=0; pos.col<=7;pos.col++)
-            {
+            int a=0,b=0;
             int moves2;
-                for(pos.row=0; pos.row<=7;pos.row++)
+            m[row][col] = 1;
+            for(a=0; a<=7;a++)
+            {
+            col=a;
+                for(b=0; b<=7;b++)
                 {
-                moves2=1;
+                row=b;
+                moves2=0;
+
                     for(int i=2; i<=64; i++)
                     {
-                        pos = findNextBestPos(m,access,row,col);
+                        if(col==-1 || row==-1) break;
                         moves2++;
+                        pos = findNextBestPos(m,access,row,col);
                         m[pos.row][pos.col] = i;
                         row = pos.row;
                         col = pos.col;
                     }
-                prArr(m);
-                //printf("%2d ",moves2);
-                printf("\n");
-                
+                //prArr(m);
+                printf("%02d ",moves2);
+                //printf("\n");
+
                 }
                 printf("\n");
             }
