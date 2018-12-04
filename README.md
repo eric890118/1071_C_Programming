@@ -62,10 +62,10 @@ Week 11
 
 Week 12
 
-##### magic
-* magic.cpp
-* magic.h
-* main.cpp
-
+  ##### magic
+*    magic.cpp
+*    magic.h
+*    main.cpp
+#####
 * Lotto adding.cpp
 * pLotto.cpp
