@@ -61,11 +61,12 @@ Week 11
 * Knight Tour -- Smart move.cpp
 
 Week 12
+* Lotto adding.cpp
+* pLotto.cpp
 
   ##### magic
 *    magic.cpp
 *    magic.h
 *    main.cpp
 #####
-* Lotto adding.cpp
-* pLotto.cpp
+
