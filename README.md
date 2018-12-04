@@ -57,3 +57,15 @@ Exam week
 
 Week 11
 * knught tour.cpp
+* complete.cpp
+* Knight Tour -- Smart move.cpp
+
+Week 12
+
+## magic
+* magic.cpp
+* magic.h
+* main.cpp
+
+* Lotto adding.cpp
+* pLotto.cpp
