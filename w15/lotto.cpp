@@ -72,6 +72,7 @@ void readFile(Lotto lottos[])
     char filename[80];
     printf("Enter filename: ");
     scanf("%s",&filename);
+    printf("\n");
     fp = fopen(filename, "r");
     if(fp==NULL)
     {
@@ -89,7 +90,7 @@ void readFile(Lotto lottos[])
     }
     counts = i;
     fclose(fp);
-    printf("%d lotto datlottos[i].date.year, lottos[i].date.month, lottos[i].date.daya read successfully from file %s\n", counts, filename);
+    printf("%d lotto data read successfully from file %s\n", counts, filename);
 }
 
 void resetLottos(Lotto lottos[], int n)
@@ -105,6 +106,7 @@ void resetLottos(Lotto lottos[], int n)
             lottos[i].num[j]=0;
         }
     }
+    printf("\nAll lottos[n] data are reset to 0\n\n");
 }
 
 void writeFile(Lotto lottos[], int n)
@@ -113,8 +115,9 @@ void writeFile(Lotto lottos[], int n)
     char filename[80];
     printf("Enter filename: ");
     scanf("%s",&filename);
-    printf("Choice: 1 for write over, 2 for append\n");
+    printf("Choice: 1 for write over, 2 for append\n=>");
     scanf("%d",&choice);
+    printf("\n");
     if(choice==1)
     {
         fp = fopen(filename, "w");
